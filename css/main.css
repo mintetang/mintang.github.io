@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Your custom CSS styles
+   ========================================================================== */
+p {
+  color: red;
+  width: 500px;
+  border: 1px solid black;
+}
+html {
+  font-size: 30px; /* px means "pixels": the base font size is now 10 pixels high */
+  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google Fonts */
+    background-color: #00539f;
+}
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ff9500;
+  padding: 10px 20px 20px 20px;
+  border: 5px solid black;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  text-shadow: 3px 3px 1px black;
+}
+p,
+li {
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Your custom CSS styles for smartphones and screens smaller than 480 px
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+    /* insert styles here */
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* Clearfix
+ * Adding a 'clearfix' class will allow parent elements to contain a floated child element
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
