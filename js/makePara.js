@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(para);
   }
 
-  const buttons = document.querySelectorAll("button");
+  const buttons = document.querySelector("button");
 
-  for (const button2 of buttons) {
-    button2.addEventListener("click", createParagraph);
+  for (const button of buttons) {
+    button.addEventListener("click", createParagraph);
   }
 });
