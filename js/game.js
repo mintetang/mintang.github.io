@@ -35,3 +35,4 @@ function checkGuess() {
       lowOrHi.textContent = "Last guess was too high!";
     }
   }
+guessSubmit.addEventListener("click", checkGuess);
