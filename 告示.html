@@ -7,9 +7,9 @@
     <style>
       .msgBox {
         position: absolute;
-        top: 15%;
-        left: 25%;
-        transform: translate(-50%,-50%);
+        top: 40px;
+        left: 15px;
+        transform: translate(0%,0%);
         width: 700px;
         border-radius: 10px;
         background-color: #eee;
@@ -46,7 +46,7 @@
     <script>
 
       const btn = document.querySelector('button');
-      btn.addEventListener('click', () => displayMessage('6月份法規改變，不記點和歸責', 'warning'));
+      btn.addEventListener('click', () => displayMessage('6月份法規改變，不記點和歸責', 'chat'));
 
       function displayMessage(msgText,msgType) {
         const html = document.querySelector('html');
@@ -72,12 +72,12 @@
           panel.style.backgroundColor = 'red';
         } else if(msgType === 'chat') {
           msg.style.backgroundImage = 'url(icons/chat.png)';
-          panel.style.backgroundColor = 'aqua';
+          panel.style.backgroundColor = 'green';
         } else {
           msg.style.paddingLeft = '20px';
         }
       }
-displayMessage('6月份法規改變，不記點和歸責', 'warning')
+displayMessage('6月份法規改變，不記點和歸責', 'chat')
     </script>
   </body>
 </html>
