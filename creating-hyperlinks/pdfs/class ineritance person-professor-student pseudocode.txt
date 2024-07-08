@@ -1,0 +1,28 @@
+class Person
+    properties
+        name
+    constructor
+        Person(name)
+    methods
+        introduceSelf()
+
+class Professor : extends Person
+    properties
+        teaches
+    constructor
+        Professor(name, teaches)
+    methods
+        grade(paper)
+        introduceSelf()
+
+class Student : extends Person
+    properties
+        year
+    constructor
+        Student(name, year)
+    methods
+        introduceSelf()
+		
+In this case, we would say that Person is the superclass or parent class of both Professor and Student. Conversely, Professor and Student are subclasses or child classes of Person.
+
+You might notice that introduceSelf() is defined in all three classes. The reason for this is that while all people want to introduce themselves, the way they do so is different:
